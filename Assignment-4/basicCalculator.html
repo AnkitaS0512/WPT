@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<div class="calc-area">
+
+<div class="heading"><h1 id="calc-heading">Calculator</h1></div>
+
+<div><table  class="calc-table" height="400px" width="400px">
+
+    <tr>
+        <td>Enter Number 1</td>
+        <td>
+            <input type="number" id="Number1" name="number1" placeholder="Enter first number"/>
+        </td>
+    </tr>
+
+    <tr><td>Enter Number 2</td>
+        <td>
+        <input type="number"  id="Number2" name="number2" placeholder="Enter Second number"/>
+        </td>
+    </tr>
+
+
+    <td>Result</td>
+    <td><input type="text" id="result" class="" placeholder="result will be displayed here"></td>
+    </tr>
+</table>
+</div>
+<div>
+<input type="button" onclick="Addition()" value="Addition">
+<input type="button" onclick="Subtraction()" value="Subtraction">
+<input type="button" onclick="Multiplication()" value="Multiplication">
+<input type="button" onclick="Division()" value="Division">
+</div>
+</div>
+
+
+<script>
+
+
+function Addition() {
+var num1Value = parseInt(document.getElementById("Number1").value);
+var num2Value = parseInt(document.getElementById("Number2").value);
+var resultADD = num1Value + num2Value;
+document.getElementById("result").value = resultADD;
+}
+
+
+
+function Subtraction() {
+
+
+
+
+var num1Value = parseInt(document.getElementById("Number1").value);
+var num2Value = parseInt(document.getElementById("Number2").value);
+var result = num1Value - num2Value;
+document.getElementById("result").value = result;
+}
+
+debugger;
+function Multiplication() {
+var num1Value = parseInt(document.getElementById("Number1").value);
+var num2Value = parseInt(document.getElementById("Number2").value);
+
+if (num1Value === 0 || num2Value === 0) {
+  alert("Please Enter values other than 0");
+} else {
+  var result = num1Value * num2Value;
+  document.getElementById("result").value = result;
+}
+}
+
+
+function Division() {
+
+
+var num1Value = parseInt(document.getElementById("Number1").value);
+var num2Value = parseInt(document.getElementById("Number2").value);
+
+if (num2Value === 0) {
+  alert("Cannot divide by zero");
+} else {
+  var result = num1Value / num2Value;
+  document.getElementById("result").value = result;
+}
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,24 @@
+
+.calc-area{
+display: grid;
+place-items: center;
+
+
+ /* position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%); */
+}
+
+.heading{
+    text-align: center;
+}
+
+input[type=number]{
+height: 50px;
+}
+
+input[type=text]{
+    height: 50px;
+    width: 170px;
+}
