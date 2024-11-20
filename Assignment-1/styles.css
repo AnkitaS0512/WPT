@@ -1,0 +1,46 @@
+ body{
+    border:7px;
+    border-color: black;
+    margin: 100px ;
+    padding: 50px;
+    border-style:double;
+
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+
+     /* here relative positioning means that the position of this element will be realtive to the container it is put in */
+    position: relative; 
+    width: 50%;
+    height:100px;
+    padding-top: 50px;
+}
+
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+}
+
+
+textarea{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+}
+
+.resume-hr{
+    
+    position: relative;
+    margin-left: -50px;
+    margin-right: -50px;
+    border-top: 2px solid black;
+   
+} 
