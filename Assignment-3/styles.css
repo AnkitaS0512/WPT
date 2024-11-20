@@ -1,0 +1,19 @@
+.container{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.right-td{
+    padding-left: 50px;
+    
+}
+
+.heading{
+    text-align: center;
+}
+
+table{
+    padding-top: 100px;
+}
